@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyAbout{
+    height: 73vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.vl {
+    border-left: 3px solid white;
+    height: 500px;
+  }
+
+.box{
+    width: 50%;
+    height: 20%;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 50%;
+    transform-origin: center;
+    transform-style: preserve-3d; 
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35vh;
+    height: 20vh;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: 2s;
+}
+.box span:hover img{
+    transform: translateY(-50px) scale(1.2);
+}
+
+.Number{
+    background:linear-gradient(to right,orange,red);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    font-size: 13vh;
+}
+.about-heading{
+    margin-right: 64%;
+}
+.about-bottom{
+    font-size: 5vh;
+    margin-left:8vh;
+}
+.about-bottom-2{
+    font-size: 5vh;
+    margin-left:70vh;
+}
+.about-bottom-3{
+    font-size: 5vh;
+    margin-left:140vh;
+}
+
+
+@media only screen and (max-width: 616px) {
+    .box span img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15vh;
+        height: 10vh;
+        border-radius: 5px;
+        object-fit: cover;
+        transition: 2s;
+    }
+    .box span{
+    width: 10%;
+    height: 50%;
+    }
+    .bodyAbout {
+        height: 40vh;
+    }
+    #Event{
+        margin: 0;
+        font-size: 3vh;
+    }
+    .about-heading {
+
+        margin-right: 50%;
+        font-size: 2vh;
+    }
+    .box{
+        width: 10%;
+        height: 5%;
+        transform-style: preserve-3d;
+        animation: rotate 30s linear infinite;
+    }
+    .h5-about{
+        font-size: 2vh;
+    }
+    .vl{
+        margin-left: 2%;
+        height: 243px;
+    }
+    .date-about{
+    font-size: 5vh;
+    margin-left: -9%;
+    margin-top: 32vh;
+    }
+    .about-bottom{
+        margin-left: 2vh;
+        font-size: 8px;
+    }
+    .about-bottom-2{
+        margin-left: 14vh;
+        font-size: 8px;
+    }
+    .about-bottom-3{
+        margin-left: 35vh;
+        font-size: 8px;
+    }
+    .Number{
+        font-size: 8vh;
+    }
+}

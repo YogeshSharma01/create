@@ -1,0 +1,215 @@
+
+.conatct-page{
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    color: whitesmoke;
+    -webkit-font-smothing:antialiased;
+}
+.rotate{
+    animation: rotation 7s infinite linear;
+    border-radius: 50%;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+.social_link-2{
+    color: #19445a;
+}
+.social_link-2:hover{
+    color: cadetblue;
+}
+
+.raf{
+    color: whitesmoke;
+}
+
+.h1-contact{
+    height: 100px;
+}
+.h1-contact span{
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce 3s ease infinite;
+    font-size: 80px;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #ccc,
+                 0 3px 0 #ccc,
+                 0 4px 0 #ccc,
+                 0 5px 0 #ccc,
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgb(0,0,0, 0.4);
+                
+}
+
+.h1-contact .raf:nth-child(2){animation-delay: .1s;}
+.h1-contact .raf:nth-child(3){animation-delay: .2s;}
+.h1-contact .raf:nth-child(4){animation-delay: .3s;}
+.h1-contact .raf:nth-child(5){animation-delay: .4s;}
+.h1-contact .raf:nth-child(6){animation-delay: .5s;}
+.h1-contact .raf:nth-child(7){animation-delay: .6s;}
+.h1-contact .raf:nth-child(8){animation-delay: .7s;}
+.h1-contact .raf:nth-child(9){animation-delay: .8s;}
+.h1-contact .raf:nth-child(10){animation-delay: .9s;}
+@keyframes bounce{
+    100%{
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc,
+                    0 2px 0 #ccc,
+                    0 3px 0 #ccc,
+                    0 4px 0 #ccc,
+                    0 5px 0 #ccc,
+                    0 6px 0 #ccc,
+                    0 7px 0 #ccc,
+                    0 8px 0 #ccc,
+                    0 9px 0 #ccc,
+                    0 50px 25px rgb(0,0,0, 0.2);
+
+    }
+}
+
+#body {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-top: 30vh;
+}
+#wrap{
+    width: 530px;
+    height: 1000px;
+}
+#address{
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 35px;
+    font-family: tahoma;
+    color: black;
+}
+#form-warm{
+    overflow: hidden;
+    height: 447px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    transition: all 1s ease-in-out .3s;
+}
+#form-warm:before{
+    content: "";
+    position: absolute;
+    bottom: 128px;
+    left: 0px;
+    background: url('./envelope/before.png');
+    width: 530px;
+    height: 317px;
+}
+#form-warm:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url('./envelope/after.png');
+    width: 530px;
+    height: 259px;
+}
+#form-warm.hide:after, #form-warm.hide:before{
+    display: none;
+}
+#form-warm:hover{
+    height: 82vh;
+    top: -200px;
+}
+#form{
+    background: white;
+    position: relative;
+    top: 200px;
+    overflow: hidden;
+    height: 500px;
+    width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 5px solid white;
+    border-right: 3px;
+    transition: all 1s ease-in-out .3s ;
+}
+
+
+@media only screen and (max-width: 616px){
+    .h1-contact span{
+        margin-top: 3vh;
+        font-size: 7vh;
+    }
+    #carouselExampleFade{
+        display: flex;
+    }
+    .rotate{
+        height: 17vh;
+    }
+    
+    #form {
+        background: linear-gradient(to right, orange, red);
+        position: relative;
+        top: 10px;
+        overflow: hidden;
+        height: 330px;
+        width: 341px;
+        margin: 0px auto;
+        border: 5px solid white;
+        margin-left: 0vh;
+       
+
+    }
+    #form-warm:hover{
+        /* height: 1vh; */
+        top: -10vh;
+    }
+    #address {
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 31px;
+        font-family: tahoma;
+        color: black;
+    }
+    #form-warm:before{
+    display: none;
+    }
+    
+    #form-warm:after{
+        display: none;
+        }
+    
+    #contact-image{
+        display: none;
+    }
+    @keyframes bounce{
+        100%{
+            top: 20px;
+            text-shadow: 0 1px 0 #ccc,
+                        0 2px 0 #ccc,
+                        0 3px 0 #ccc,
+                        0 4px 0 #ccc,
+                        0 5px 0 #ccc,
+                        0 6px 0 #ccc,
+                        0 7px 0 #ccc,
+                        0 8px 0 #ccc,
+                        0 9px 0 #ccc,
+                        0 50px 25px rgb(0,0,0, 0.2);
+    
+        }
+    }
+  
+    
+    
+}
