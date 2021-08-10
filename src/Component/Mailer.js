@@ -4,7 +4,7 @@ import emailJS from 'emailjs-com';
 const Mailer = () =>{
     const sendEmail = (e) =>{
         e.preventDefault();
-        emailJS.sendForm('service_6ekqafn','template_46r2r4w', e.target, 'user_aB05ZMutS2MzWJf7LYoX5').then(res=>{
+        emailJS.sendForm('service_msdd5ze','template_diw6kir', e.target, 'user_9y3CGQvtugEHOoW23V1Ok').then(res=>{
             console.log(res);
         }).catch(err => console.log(err));
     }
